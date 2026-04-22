@@ -17,5 +17,9 @@
         "path": "./themes/DeepSky-color-theme.json"
       }
     ]
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/matheus-srego/deepsky.git"
   }
 }
