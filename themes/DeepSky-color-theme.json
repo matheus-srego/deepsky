@@ -462,6 +462,26 @@
       "settings": {
         "foreground": "#ac79c6"
       }
+    },
+    {
+      "name": "Package Keyword",
+      "scope": ["keyword.other.package"],
+      "settings": { "foreground": "#ca8f65" }
+    },
+    {
+      "name": "Package Path",
+      "scope": ["storage.modifier.package"],
+      "settings": { "foreground": "#78afd6" }
+    },
+    {
+      "name": "Import Keyword",
+      "scope": ["keyword.other.import"],
+      "settings": { "foreground": "#d2a17b" }
+    },
+    {
+      "name": "Import Path",
+      "scope": ["storage.modifier.import"],
+      "settings": { "foreground": "#8fb7cf" }
     }
   ]
 }
