@@ -291,24 +291,27 @@
     "editor.stackFrameHighlightBackground": "#D19A6622",
     "editor.focusedStackFrameHighlightBackground": "#98C37922",
 
-    "symbolIcon.classForeground": "#61AFEF",
-    "symbolIcon.functionForeground": "#E5C07B",
-    "symbolIcon.methodForeground": "#E5C07B",
-    "symbolIcon.variableForeground": "#ABB2BF",
-    "symbolIcon.keywordForeground": "#ac79c6",
-    "symbolIcon.stringForeground": "#89B86A",
-    "symbolIcon.numberForeground": "#D19A66",
-    "symbolIcon.interfaceForeground": "#56B6C2",
-    "symbolIcon.constructorForeground": "#E5C07B",
+    "symbolIcon.classForeground": "#7AAEC4",
+    "symbolIcon.functionForeground": "#7AACB8",
+    "symbolIcon.methodForeground": "#7AACB8",
+    "symbolIcon.variableForeground": "#9AB4A4",
+    "symbolIcon.keywordForeground": "#8A9EAA",
+    "symbolIcon.stringForeground": "#7d9872",
+    "symbolIcon.numberForeground": "#C4A47A",
+    "symbolIcon.interfaceForeground": "#A47AAC",
+    "symbolIcon.constructorForeground": "#7AACB8",
     "symbolIcon.propertyForeground": "#8592a8",
     "symbolIcon.fieldForeground": "#8592a8"
   },
   "tokenColors": [
     {
       "name": "Comment",
-      "scope": ["comment", "punctuation.definition.comment"],
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
       "settings": {
-        "foreground": "#7F848E",
+        "foreground": "#6A7480",
         "fontStyle": "italic"
       }
     },
@@ -321,73 +324,358 @@
     },
     {
       "name": "Number, Constant",
-      "scope": ["constant.numeric", "constant.language"],
+      "scope": [
+        "constant.numeric",
+        "constant.language"
+      ],
       "settings": {
-        "foreground": "#D19A66"
+        "foreground": "#C4A47A"
       }
     },
     {
       "name": "Invalid",
-      "scope": ["invalid", "invalid.illegal"],
+      "scope": [
+        "invalid",
+        "invalid.illegal"
+      ],
       "settings": {
-        "foreground": "#E06C75",
+        "foreground": "#C47A7A",
         "fontStyle": "underline"
       }
     },
+
+    // ─── KEYWORDS ──────────────────────────────────────────────
+
+    {
+      "name": "Control Flow — if, for, while, switch, return... (Java, TS, JS, Python)",
+      "scope": [
+        "keyword.control",
+        "keyword.control.js",
+        "keyword.control.ts",
+        "keyword.control.java",
+        "keyword.control.python"
+      ],
+      "settings": {
+        "foreground": "#8A9EAA"
+      }
+    },
+    {
+      "name": "Control Flow — Dart (if, for, while, switch, return, break...)",
+      "scope": [
+        "keyword.control.dart"
+      ],
+      "settings": {
+        "foreground": "#8A9EAA"
+      }
+    },
+    {
+      "name": "Throw / Exception — Dart (try, catch, finally, throw, on, rethrow)",
+      "scope": [
+        "keyword.control.catch-exception.dart"
+      ],
+      "settings": {
+        "foreground": "#C47A7A"
+      }
+    },
+    {
+      "name": "Throw / Exception — TS/JS (catch, finally, throw, try)",
+      "scope": [
+        "keyword.control.trycatch.js",
+        "keyword.control.trycatch.ts"
+      ],
+      "settings": {
+        "foreground": "#C47A7A"
+      }
+    },
+    {
+      "name": "Async / Await — Dart",
+      "scope": [
+        "keyword.control.async.dart"
+      ],
+      "settings": {
+        "foreground": "#A4B87A"
+      }
+    },
+    {
+      "name": "Async / Await — TS/JS",
+      "scope": [
+        "keyword.control.flow.js",
+        "keyword.control.flow.ts"
+      ],
+      "settings": {
+        "foreground": "#A4B87A"
+      }
+    },
+    {
+      "name": "New Keyword — Dart",
+      "scope": [
+        "keyword.control.new.dart"
+      ],
+      "settings": {
+        "foreground": "#9AB4A4"
+      }
+    },
+    {
+      "name": "New Keyword — TS/JS",
+      "scope": [
+        "keyword.operator.new.js",
+        "keyword.operator.new.ts"
+      ],
+      "settings": {
+        "foreground": "#9AB4A4"
+      }
+    },
+    {
+      "name": "Other Keywords",
+      "scope": [
+        "keyword.other",
+        "keyword.other.js",
+        "keyword.other.ts"
+      ],
+      "settings": {
+        "foreground": "#8A9EAA"
+      }
+    },
+
+    // ─── THIS / SUPER ───────────────────────────────────────────
+
+    {
+      "name": "This, Super — Dart",
+      "scope": [
+        "variable.language.dart"
+      ],
+      "settings": {
+        "foreground": "#9A8AC4"
+      }
+    },
+    {
+      "name": "This, Super — TS/JS/Java",
+      "scope": [
+        "variable.language.this",
+        "variable.language.super"
+      ],
+      "settings": {
+        "foreground": "#9A8AC4"
+      }
+    },
+
+    // ─── ACCESS MODIFIERS ───────────────────────────────────────
+
+    {
+      "name": "Access Modifiers — Java (public, private, protected, static, final...)",
+      "scope": [
+        "storage.modifier.java"
+      ],
+      "settings": {
+        "foreground": "#7A9E9A"
+      }
+    },
+    {
+      "name": "Access Modifiers — Dart (final, const, static, abstract...)",
+      "scope": [
+        "storage.modifier.dart"
+      ],
+      "settings": {
+        "foreground": "#7A9E9A"
+      }
+    },
+    {
+      "name": "Access Modifiers — TS/JS (public, private, protected, readonly...)",
+      "scope": [
+        "storage.modifier.ts",
+        "storage.modifier.js"
+      ],
+      "settings": {
+        "foreground": "#7A9E9A"
+      }
+    },
+
+    // ─── CLASS / INTERFACE / ENUM KEYWORD ──────────────────────
+
+    {
+      "name": "Class Keyword — Java",
+      "scope": [
+        "storage.type.class.java",
+        "storage.type.interface.java",
+        "storage.type.enum.java"
+      ],
+      "settings": {
+        "foreground": "#C49A7A"
+      }
+    },
+    {
+      "name": "Class Keyword — Dart",
+      "scope": [
+        "keyword.declaration.dart"
+      ],
+      "settings": {
+        "foreground": "#C49A7A"
+      }
+    },
+    {
+      "name": "Class Keyword — TS/JS",
+      "scope": [
+        "storage.type.class.js",
+        "storage.type.class.ts"
+      ],
+      "settings": {
+        "foreground": "#C49A7A"
+      }
+    },
+
+    // ─── CLASS NAME ─────────────────────────────────────────────
+
+    {
+      "name": "Class Name — Java",
+      "scope": [
+        "entity.name.type.class.java"
+      ],
+      "settings": {
+        "foreground": "#7AAEC4"
+      }
+    },
+    {
+      "name": "Class Name — Dart",
+      "scope": [
+        "class.name.dart",
+        "enum.name.dart"
+      ],
+      "settings": {
+        "foreground": "#7AAEC4"
+      }
+    },
+    {
+      "name": "Class Name — TS/JS",
+      "scope": [
+        "entity.name.type.class.ts",
+        "entity.name.type.class.js"
+      ],
+      "settings": {
+        "foreground": "#7AAEC4"
+      }
+    },
+
+    // ─── EXTENDS / IMPLEMENTS ───────────────────────────────────
+
+    {
+      "name": "Inherited Class (extends, implements)",
+      "scope": [
+        "entity.other.inherited-class"
+      ],
+      "settings": {
+        "foreground": "#A4B87A"
+      }
+    },
+
+    // ─── TYPES IN USE ───────────────────────────────────────────
+
+    {
+      "name": "Types — Java (int, String, void, boolean...)",
+      "scope": [
+        "storage.type.java",
+        "storage.type.primitive.java"
+      ],
+      "settings": {
+        "foreground": "#A47AAC"
+      }
+    },
+    {
+      "name": "Types — Dart (int, String, void, bool, dynamic...)",
+      "scope": [
+        "storage.type.primitive.dart",
+        "support.class.dart"
+      ],
+      "settings": {
+        "foreground": "#A47AAC"
+      }
+    },
+    {
+      "name": "Types — TS/JS (number, string, boolean, void...)",
+      "scope": [
+        "support.type.primitive.ts",
+        "support.type.primitive.js",
+        "entity.name.type.ts",
+        "entity.name.type.js"
+      ],
+      "settings": {
+        "foreground": "#A47AAC"
+      }
+    },
+    {
+      "name": "Support Classes (built-in classes used in code)",
+      "scope": [
+        "support.class"
+      ],
+      "settings": {
+        "foreground": "#A47AAC"
+      }
+    },
+
+    // ─── FUNCTIONS / METHODS ────────────────────────────────────
+
     {
       "name": "Functions and Methods",
       "scope": [
         "entity.name.function",
-        "meta.function-call",
-        "meta.method-call.java",
-        "meta.instance.constructor.dart"
+        "entity.name.function.dart",
+        "function.name.dart",
+        "meta.function-call.java",
+        "meta.method-call.java"
       ],
       "settings": {
-        "foreground": "#E5C07B"
+        "foreground": "#7AACB8"
       }
     },
+
+    // ─── VARIABLES ──────────────────────────────────────────────
+
     {
-      "name": "Class Declaration",
+      "name": "Variable Readwrite",
       "scope": [
-        "entity.name.type.class",
-        "entity.name.type.class.java",
-        "entity.name.type.class.dart"
+        "variable.other.readwrite",
+        "variable.other.readwrite.js",
+        "variable.other.readwrite.ts"
       ],
       "settings": {
-        "foreground": "#61AFEF"
-      }
-    },
-    {
-      "name": "Types in Use",
-      "scope": [
-        "storage.type",
-        "entity.other.inherited-class",
-        "support.class",
-        "storage.type.java",
-        "storage.type.dart"
-      ],
-      "settings": {
-        "foreground": "#56B6C2"
+        "foreground": "#9AB4A4"
       }
     },
     {
       "name": "Variable Parameter",
-      "scope": ["variable.parameter"],
+      "scope": [
+        "variable.parameter"
+      ],
       "settings": {
         "foreground": "#8592a8"
       }
     },
     {
       "name": "Variable Property and Field",
-      "scope": ["variable.other.property", "variable.other.field"],
+      "scope": [
+        "variable.other.property",
+        "variable.other.field",
+        "variable.other.object.property.js",
+        "variable.other.object.property.ts"
+      ],
+      "settings": {
+        "foreground": "#8592a8"
+      }
+    },
+
+    // ─── OPERATORS / PUNCTUATION ────────────────────────────────
+
+    {
+      "name": "Operators",
+      "scope": [
+        "keyword.operator"
+      ],
       "settings": {
         "foreground": "#8592a8"
       }
     },
     {
-      "name": "Operators and Punctuation",
+      "name": "Punctuation Accessor and Separator",
       "scope": [
-        "keyword.operator",
         "punctuation.accessor",
         "punctuation.separator"
       ],
@@ -396,11 +684,22 @@
       }
     },
     {
-      "name": "Annotations and Decorators",
+      "name": "Punctuation Terminator",
       "scope": [
-        "meta.decorator",
-        "meta.annotation",
-        "storage.type.annotation.java",
+        "punctuation.terminator"
+      ],
+      "settings": {
+        "foreground": "#5A6470"
+      }
+    },
+
+    // ─── ANNOTATIONS / DECORATORS ───────────────────────────────
+
+    {
+      "name": "Annotations — Dart (@override, @Entity...)",
+      "scope": [
+        "annotation.dart",
+        "entity.name.function.annotation.dart",
         "storage.type.annotation.dart"
       ],
       "settings": {
@@ -408,79 +707,165 @@
       }
     },
     {
-      "name": "HTML Tags",
-      "scope": ["entity.name.tag.html"],
+      "name": "Annotations — Java (@Override, @Entity...)",
+      "scope": [
+        "storage.type.annotation.java",
+        "punctuation.definition.annotation.java"
+      ],
       "settings": {
-        "foreground": "#E06C75"
+        "foreground": "#7898D4"
       }
     },
     {
-      "name": "HTML Attributes",
-      "scope": ["entity.other.attribute-name.html"],
+      "name": "Decorators — TS/JS (@Component, @Injectable...)",
+      "scope": [
+        "meta.decorator.js",
+        "meta.decorator.ts",
+        "entity.name.function.decorator.js",
+        "entity.name.function.decorator.ts",
+        "punctuation.decorator.js",
+        "punctuation.decorator.ts"
+      ],
       "settings": {
-        "foreground": "#61AFEF"
+        "foreground": "#7898D4"
       }
     },
     {
-      "name": "JSON Keys",
-      "scope": ["support.type.property-name.json"],
+      "name": "Decorators — Python",
+      "scope": [
+        "meta.function.decorator.python",
+        "entity.name.function.decorator.python",
+        "punctuation.definition.decorator.python"
+      ],
       "settings": {
-        "foreground": "#61AFEF"
+        "foreground": "#7898D4"
+      }
+    },
+
+    // ─── IMPORT / PACKAGE ───────────────────────────────────────
+
+    {
+      "name": "Package Keyword — Java",
+      "scope": [
+        "keyword.other.package.java"
+      ],
+      "settings": {
+        "foreground": "#ca8f65"
       }
     },
     {
-      "name": "YAML Tags",
-      "scope": ["entity.name.tag.yaml"],
+      "name": "Package Path — Java",
+      "scope": [
+        "storage.modifier.package.java"
+      ],
       "settings": {
-        "foreground": "#61AFEF"
+        "foreground": "#78afd6"
       }
     },
     {
-      "name": "Markdown Heading",
-      "scope": ["heading.markup.md", "markup.heading"],
+      "name": "Import Keyword — Java",
+      "scope": [
+        "keyword.other.import.java"
+      ],
       "settings": {
-        "foreground": "#E5C07B",
-        "fontStyle": "bold"
+        "foreground": "#d2a17b"
       }
     },
     {
-      "name": "Markdown List",
-      "scope": ["markup.list.markdown"],
-      "settings": {
-        "foreground": "#ac79c6"
-      }
-    },
-    {
-      "name": "Package Keyword",
-      "scope": ["keyword.other.package"],
-      "settings": { "foreground": "#ca8f65" }
-    },
-    {
-      "name": "Package Path",
-      "scope": ["storage.modifier.package", "support.variable.magic"],
-      "settings": { "foreground": "#78afd6" }
-    },
-    {
-      "name": "Import Keyword",
-      "scope": ["keyword.other.import", "keyword.control.import", "meta.import", "keyword", "storage.modifier", "variable.language.this"],
-      "settings": { "foreground": "#d2a17b" }
-    },
-    {
-      "name": "Puntuction Keyword",
-      "scope": ["punctuation.terminator"],
-      "settings": { "foreground": "#6B6F73" }
-    },
-    {
-      "name": "Variable Readwrite",
-      "scope": ["variable.other.readwrite", "source.python", "meta.declaration"],
+      "name": "Import Path — Java",
+      "scope": [
+        "storage.modifier.import.java"
+      ],
       "settings": {
         "foreground": "#8fb7cf"
       }
     },
     {
-      "name": "Import Path",
-      "scope": ["storage.modifier.import"],
-      "settings": { "foreground": "#8fb7cf" }
+      "name": "Import — Dart (import, export, library, part, as, show, hide)",
+      "scope": [
+        "keyword.other.import.dart"
+      ],
+      "settings": {
+        "foreground": "#d2a17b"
+      }
+    },
+    {
+      "name": "Import — TS/JS (import, export, from, as)",
+      "scope": [
+        "keyword.control.import.js",
+        "keyword.control.import.ts",
+        "keyword.control.export.js",
+        "keyword.control.export.ts",
+        "keyword.control.from.js",
+        "keyword.control.from.ts"
+      ],
+      "settings": {
+        "foreground": "#d2a17b"
+      }
+    },
+
+    // ─── MARKUP / HTML / JSON / YAML ────────────────────────────
+
+    {
+      "name": "HTML Tags",
+      "scope": [
+        "entity.name.tag.html"
+      ],
+      "settings": {
+        "foreground": "#C48A8A"
+      }
+    },
+    {
+      "name": "HTML Attributes",
+      "scope": [
+        "entity.other.attribute-name.html"
+      ],
+      "settings": {
+        "foreground": "#7C9E8A"
+      }
+    },
+    {
+      "name": "JSON Keys",
+      "scope": [
+        "support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#7A98AC"
+      }
+    },
+    {
+      "name": "YAML Keys",
+      "scope": [
+        "entity.name.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#7A98AC"
+      }
+    },
+
+    // ─── MARKDOWN ───────────────────────────────────────────────
+
+    {
+      "name": "Markdown Heading",
+      "scope": [
+        "markup.heading",
+        "markup.heading.markdown",
+        "entity.name.section.markdown"
+      ],
+      "settings": {
+        "foreground": "#C49A7A",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown List",
+      "scope": [
+        "markup.list.markdown",
+        "punctuation.definition.list.begin.markdown"
+      ],
+      "settings": {
+        "foreground": "#9A8AC4"
+      }
     }
   ]
 }
