@@ -316,7 +316,7 @@
       "name": "String",
       "scope": ["string"],
       "settings": {
-        "foreground": "#89B86A"
+        "foreground": "#7d9872"
       }
     },
     {
@@ -332,13 +332,6 @@
       "settings": {
         "foreground": "#E06C75",
         "fontStyle": "underline"
-      }
-    },
-    {
-      "name": "Keyword, Storage Modifier",
-      "scope": ["keyword", "storage.modifier", "variable.language.this"],
-      "settings": {
-        "foreground": "#ac79c6"
       }
     },
     {
@@ -392,13 +385,6 @@
       }
     },
     {
-      "name": "Variable Readwrite",
-      "scope": ["variable.other.readwrite"],
-      "settings": {
-        "foreground": "#DCDFE4"
-      }
-    },
-    {
       "name": "Operators and Punctuation",
       "scope": [
         "keyword.operator",
@@ -414,10 +400,11 @@
       "scope": [
         "meta.decorator",
         "meta.annotation",
-        "storage.type.annotation.java"
+        "storage.type.annotation.java",
+        "storage.type.annotation.dart"
       ],
       "settings": {
-        "foreground": "#56B6C2"
+        "foreground": "#7898D4"
       }
     },
     {
@@ -470,13 +457,25 @@
     },
     {
       "name": "Package Path",
-      "scope": ["storage.modifier.package"],
+      "scope": ["storage.modifier.package", "support.variable.magic"],
       "settings": { "foreground": "#78afd6" }
     },
     {
       "name": "Import Keyword",
-      "scope": ["keyword.other.import"],
+      "scope": ["keyword.other.import", "keyword.control.import", "meta.import", "keyword", "storage.modifier", "variable.language.this"],
       "settings": { "foreground": "#d2a17b" }
+    },
+    {
+      "name": "Puntuction Keyword",
+      "scope": ["punctuation.terminator"],
+      "settings": { "foreground": "#6B6F73" }
+    },
+    {
+      "name": "Variable Readwrite",
+      "scope": ["variable.other.readwrite", "source.python", "meta.declaration"],
+      "settings": {
+        "foreground": "#8fb7cf"
+      }
     },
     {
       "name": "Import Path",
