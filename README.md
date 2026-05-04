@@ -12,7 +12,7 @@
 4. Click **Install**
 5. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`), type **Color Theme**, and select **DeepSky**
 
-Or install directly from the [VS Code Marketplace]().
+Or install directly from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=arara.deepsky).
 
 ## <details><summary>Preview</summary>
 
@@ -26,16 +26,16 @@ Or install directly from the [VS Code Marketplace]().
 
 | Role | Color | Hex |
 |---|---|---|
-| Background | ![#23252A](https://via.placeholder.com/12/23252A/23252A.png) Editor | `#23252A` |
-| Background | ![#1B1D22](https://via.placeholder.com/12/1B1D22/1B1D22.png) Sidebar / Titlebar | `#1B1D22` |
-| Foreground | ![#ABB2BF](https://via.placeholder.com/12/ABB2BF/ABB2BF.png) Text | `#ABB2BF` |
-| Blue | ![#61AFEF](https://via.placeholder.com/12/61AFEF/61AFEF.png) Info / Functions | `#61AFEF` |
-| Green | ![#98C379](https://via.placeholder.com/12/98C379/98C379.png) Strings / Added | `#98C379` |
-| Red | ![#E06C75](https://via.placeholder.com/12/E06C75/E06C75.png) Errors / Deleted | `#E06C75` |
-| Yellow | ![#D19A66](https://via.placeholder.com/12/D19A66/D19A66.png) Warnings / Numbers | `#D19A66` |
-| Purple | ![#A47AAC](https://via.placeholder.com/12/A47AAC/A47AAC.png) Types | `#A47AAC` |
-| Cyan | ![#56B6C2](https://via.placeholder.com/12/56B6C2/56B6C2.png) Terminal Cyan | `#56B6C2` |
-| Gold | ![#D8B042](https://via.placeholder.com/12/D8B042/D8B042.png) Highlights / Badges | `#D8B042` |
+| Background | Editor | `#23252A` |
+| Background | Sidebar / Titlebar | `#1B1D22` |
+| Foreground | Text | `#ABB2BF` |
+| Blue | Info / Functions | `#61AFEF` |
+| Green | Strings / Added | `#98C379` |
+| Red | Errors / Deleted | `#E06C75` |
+| Yellow | Warnings / Numbers | `#D19A66` |
+| Purple | Types | `#A47AAC` |
+| Cyan | Terminal Cyan | `#56B6C2` |
+| Gold | Highlights / Badges | `#D8B042` |
 
 ## Supported Languages
 
@@ -65,4 +65,4 @@ Contributions are welcome! If you find a language or token that looks off, feel 
 
 ## License
 
-[MIT](LICENSE) © [matheus-srego](https://github.com/matheus-srego)
+[MIT](LICENSE) © [DeepSky](https://github.com/matheus-srego/deepsky/blob/main/LICENSE.md)
